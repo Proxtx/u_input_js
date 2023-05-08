@@ -7,7 +7,7 @@ export class Component {
 
   async init() {
     await uiBuilder.ready(this.arg1);
-    this.arg1.component.inputDefinition({
+    await this.arg1.component.inputDefinition({
       type: "text",
       name: "Code",
       placeholder: "Code",
