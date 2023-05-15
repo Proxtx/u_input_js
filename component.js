@@ -27,6 +27,7 @@ export class Component {
     return {
       evaluate: true,
       code: await this.arg1.component.getValue(),
+      type: "js",
     };
   }
 }
